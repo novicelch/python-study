@@ -1,0 +1,116 @@
+一，选择题
+	以下哪个不是python解释器	D	
+		CPython
+		IPython
+		Jython
+		py
+
+	下列哪个表达式在Python中是非法的？	B
+		x = y = z = 1
+		x = (y = z + 1)
+		x, y = y, x
+		x += y
+
+	print("%d %% %d"%(3, 5)) 输出结果是？	A
+		3 % 5
+		3 %% 5
+		2
+		1
+
+	“今年第一季度GDP提高了x%”，x为float值，格式化字符串，x保留两位小数，下面哪个是正确的？	C
+		print("今年第一季度GDP提高了%.2f"%(22.234,))
+		print("今年第一季度GDP提高了%.2f%"%(22.234,))
+		print("今年第一季度GDP提高了%.2f%%"%(22.234,))
+		print("今年第一季度GDP提高了{0}%".format(22.234))
+
+	l = ["cdsa", 32, 33.2, None, True];l.pop();print(l);打印结果是：	 C
+		["cdsa", 32, 33.2, True]
+		["cdsa", 32, None, True]
+		["cdsa", 32, 33.2, None]
+		[32, 33.2, None, True]
+
+	print(15 // 2);	B
+		1
+		7
+		7.5
+		8
+
+	下面哪个不是 python 的数据类型	D
+		int
+		str
+		set
+		double
+	*args 代表什么参数	B
+		位置参数
+		可变参数
+		可变关键字参数
+		命名关键字参数
+	函数多个返回值，实际上返回的是什么数据类型？      C
+		list
+		set
+		tuple
+		dict
+	安装Django2.0.7版本，使用的什么命令？	C
+		pip install django
+		pip install django=2.0.7
+		pip install django==2.0.7
+		pip install django version=2.0.7
+
+二、填空题
+	字符串前面添加u、r、b分别代表什么？	unicode编码、普通字符、bytes
+	requests模块请求远程服务器，如何设置相应编码？	
+	windows下执行python的方式；		在cmd窗口下运行python指令    	
+	创建python package，会自动生成什么文件？ __init__.py
+	python变量作用域有哪些？	Local、Enclosing、Global、Built-in
+
+三、问答题
+	python命名规则？
+		1、变量的命名规则
+		每个单词都使用小写字母
+		单词与单词之间用英文下划线_连接
+
+		2、常量的命名规则
+		一般采用全部单词大写
+		单词之间用英文下划线_连接
+
+		3、函数的命名规则
+		每个单词都使用小写字母
+		单词之间用下划线连接
+
+		4、类的命名规则
+		大驼峰命名法(每个单词首字母大写，单词之间没有下划线)
+
+		5、全局变量和局部变量的命名规则
+		全局变量：采用gl_或g_加变量名
+		局部变量：同变量的命名规则
+
+	set删除操作中，pop、remove的区别？
+		pop按照索引删除字符，返回值可以付给其他的变量，返回的是你弹出的那个数值
+		remove删除首个符合条件的元素，并不删除特定的索引
+		
+	list使用+=和append函数的区别？
+		append方法是给列表增加一个元素，
+		+=是在上个符号后边增加元素
+		
+	使用bs4解析响应内容，获取某div（class为aaa）下所有span节点；
+		html_xpath = etree.HTML(r.text);
+   		li_list = html_xpath.xpath("//div[@class='contMain fontSt']//li");
+    		for li in li_list:
+        		span = li.xpath("./span");
+
+
+	简述Django操作流程、组件的作用；
+		创建admin，修改setting中的DATABASES连接数据库，创建app类，最后运行manage.py
+		
+
+四、编程题
+	定义一个函数，接受 0 个或多个参数，返回累计乘积；
+	def multiply():
+				
+
+
+	定义一个函数，去掉字符串前后的空格；
+	def remove_spaces(str):
+   		 c = str.split(" ");
+   		 s=''.join(c);
+    	 print(s);
